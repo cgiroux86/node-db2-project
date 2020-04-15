@@ -27,9 +27,7 @@ module.exports = {
 
   production: {
     client: "pg",
-    connection: {
-      filename: "./cars.db3",
-    },
+    connection: process.env.DATABASE_URL,
     pool: {
       min: 2,
       max: 10,
