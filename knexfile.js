@@ -26,11 +26,9 @@ module.exports = {
   },
 
   production: {
-    client: "postgresql",
+    client: "sqlite3",
     connection: {
-      database: "my_db",
-      user: "username",
-      password: "password",
+      filename: "./cars.db3",
     },
     pool: {
       min: 2,
